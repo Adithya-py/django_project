@@ -1,0 +1,32 @@
+{% load static %}
+
+<head>
+    <title>Django Blog</title>
+    <link rel="stylesheet" href="{% static '/css/base.css'  %}">
+
+</head>
+<header>
+
+    <div class="nav-left">
+        <a href="{% url 'home'%}">Home</a>
+        <a href="{% url 'about'%}">About</a>
+        <a href="{% url 'contact us'%}">Contact Us</a>
+        <a href="{% url 'open page'%}">Open Page</a>
+    </div>
+
+    <div class="nav-right">
+        <h3><a href="{% url 'post_new'%}" style="float : right;"> + New Blog Post</a></h3>
+    </div>
+    
+    
+    
+    
+    
+    <hr>
+    <div class="container">
+        <h1><a href="{% url 'home' %}">Django Blog Home Page</a></h1>
+    </div>
+
+
+</header>
+{%block content%} {%endblock content%}
